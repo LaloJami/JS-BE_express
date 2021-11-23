@@ -78,3 +78,10 @@ este archivo se encargara de definir todas las rutas de products, de esta forma 
 
 El nombre del archivo puede tener una *firma* o una forma especifica de notacion dependiendo de tu equipo de desarrollo. Por ejemplo podemos llamar a este archivo `/routes/productsRouter.js` (camelCase) o `/routes/products.router.js` (extension).
 Puedes tener de forma camelCase o tipo extension pero NO puedes tener ambas, define al inicio el tipo de firma que van a majerar en tu proyecto.
+
+# Código de estado o HTTP response status codes
+Nos permite mandar un mensaje de estado al usuario, 
+códigos con su significado con perritos
+https://httpstatusdogs.com/
+códigos con su significado con gatitos
+https://http.cat/

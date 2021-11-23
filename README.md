@@ -85,3 +85,14 @@ códigos con su significado con perritos
 https://httpstatusdogs.com/
 códigos con su significado con gatitos
 https://http.cat/
+
+# ¿Qué son los Middleware?
+
+Middleware es software que permite uno o más tipos de comunicación o conectividad entre dos o más aplicaciones o componentes de aplicaciones en una red distribuida. Al facilitar la conexión de aplicaciones que no fueron diseñadas para conectarse entre sí, y al brindar funcionalidad para conectarlas de manera inteligente, el middleware agiliza el desarrollo de aplicaciones y acelera el tiempo de comercialización.
+
+## Casos de uso
+- Funciona como pipes (tuberia) Podemos conectar unos con otros, la salida de uno puede ser la entrada del otro.
+- Validar datos
+- Capturar errores
+- Validar permisos
+- Controlar acceso

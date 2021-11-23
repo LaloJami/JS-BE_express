@@ -59,3 +59,22 @@ La palabra “idempotente” significa que cualquier número de solicitudes repe
 Por ejemplo, si un campo de contador de incremento automático es una parte integral del recurso, entonces un PUT lo sobrescribirá naturalmente (ya que sobrescribe todo), pero no necesariamente para .`PATCH`
 
 `PATCH` (como [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)) puede tener efectos secundarios sobre otros recursos.
+
+
+# Separación de responsabilidades con express.Router
+
+[Lectura](https://profile.es/blog/principios-solid-desarrollo-software-calidad/)
+
+## Single Responsability Principle
+Estre principio se trata de que cada artefacto/pieza de código deberia tener solo una única responsabilidad y este principio se puede aplicar para clases, archivos o métodos.
+
+**¿Como aplicamos este principio a nuestro programa?**
+Con express estamos creando diferentes enpoints, un ejemplo es `http://localhost:3000/products` para tener todos los metodos de products separados de los otros endpoints podemos crear un archivo.
+```
+/routes
+  - products.js
+```
+este archivo se encargara de definir todas las rutas de products, de esta forma separamos las responsabilidades, asi lo haremos con todas las rutas especificas que necesitemos.
+
+El nombre del archivo puede tener una *firma* o una forma especifica de notacion dependiendo de tu equipo de desarrollo. Por ejemplo podemos llamar a este archivo `/routes/productsRouter.js` (camelCase) o `/routes/products.router.js` (extension).
+Puedes tener de forma camelCase o tipo extension pero NO puedes tener ambas, define al inicio el tipo de firma que van a majerar en tu proyecto.
